@@ -1,12 +1,7 @@
 var game = new Phaser.Game(1500, 1000, Phaser.AUTO);
-game.state.add('stage0', demo.stage0);
-game.state.add('stage1', demo.stage1);
-game.state.add('stage2', demo.stage2);
-game.state.add('stage3', demo.stage3);
-game.state.add('stage4', demo.stage4);
-game.state.add('stage5', demo.stage5);
-game.state.add('stage6', demo.stage6);
-game.state.add('stage7', demo.stage7);
-game.state.add('stage8', demo.stage8);
-game.state.add('stage9', demo.stage9);
-game.state.start('stage0');
+game.state.add('state0', demo.state0);
+game.state.add('state1', demo.state1);
+game.state.add('state2', demo.state2);
+game.state.add('state3', demo.state3);
+game.state.add('state4', demo.state4);
+game.state.start('state0');
