@@ -64,6 +64,7 @@ demo.state2.prototype = {
 			this.firing();
 		}
 		game.physics.arcade.overlap(bullets, newEnemy, this.killEnemy);
+		game.physics.arcade.overlap(bullets, enemyGroup, this.killGroup);
 	},
 
 	/*
@@ -80,6 +81,11 @@ demo.state2.prototype = {
 	killEnemy: function () {
 		console.log('kill the enemy');
 		newEnemy.kill();
-		bullet.kill();
+		alert("Game is over");
+		console.log('Oh no, I am dying!')
+	},
+	killGroup: function (b, e) {
+		b.kill();
+		e.kill();
 	}
 };
