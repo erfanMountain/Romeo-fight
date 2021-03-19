@@ -11,7 +11,6 @@ demo.state2.prototype = {
 		game.load.image('bullet', 'assets/sprites/bullet.png');
 	},
 	create: function(){
-		game.state.backgroundColor = '#80ff80';
         addChangeStateEventListeners();
 
 
